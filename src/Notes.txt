@@ -1,0 +1,2 @@
+Center navbar icon. 
+Already imported Hashlink. Have background video for each main component, then do a color gradual from black into next background video
