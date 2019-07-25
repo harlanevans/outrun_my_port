@@ -4,11 +4,13 @@ import React from "react";
 import Landing from "./Landing";
 import FadeOne from "./color-grade/FadeOne";
 import Portfolio from "./Portfolio";
-import About from './About';
+import About from "./About";
 
 // Mobile Components
-import NavMobile from '../mobile/NavMobile';
-import PortMobile from '../mobile/PortMobile';
+import NavMobile from "../mobile/NavMobile";
+import HeaderMobile from "../mobile/HeaderMobile";
+import PortMobile from "../mobile/PortMobile";
+import AboutMobile from "../mobile/AboutMobile";
 
 class Home extends React.Component {
   state = {
@@ -37,30 +39,35 @@ class Home extends React.Component {
     if (isMobile) {
       return (
         <div>
-          <div id='top'>
-          <NavMobile />
+          <div className="bg-landing">
+            <div id="top">
+              <NavMobile />
+              <HeaderMobile />
+            </div>
           </div>
-          <div id='portmobile'>
-          <PortMobile />
+          <div id="portmobile">
+            <PortMobile />
+          </div>
+          <div id="aboutmobile">
+          <AboutMobile />
           </div>
         </div>
       );
     } else {
       return (
-
         <div>
-          <div id='top'>
-        <Landing />
+          <div id="top">
+            <Landing />
           </div>
-        {/* <FadeOne /> */}
-        <div id="portfolio">
-          <Portfolio />
+          {/* <FadeOne /> */}
+          <div id="portfolio">
+            <Portfolio />
+          </div>
+          <div id="about">
+            <About />
+          </div>
         </div>
-        <div id='about'>
-          <About />
-        </div>
-      </div>
-        );
+      );
     }
   }
 }

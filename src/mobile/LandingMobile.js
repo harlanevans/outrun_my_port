@@ -1,13 +1,21 @@
-import React from 'react';
-import NavMobile from './NavMobile';
-import HeaderMobile from './HeaderMobile';
+// import React from 'react';
 
-const LandingMobile = () => {
-  return(
-    <div>
+// import { Grid } from 'semantic-ui-react';
 
-    </div>
-  )
-}
+// import NavMobile from './NavMobile';
+// import HeaderMobile from './HeaderMobile';
 
-export default LandingMobile;
+// const LandingMobile = () => {
+//   return(
+//       <div className="bg-landing">
+//         <Grid columns={1} stackable>
+//           <Grid.Column>
+//       <NavMobile />
+//       <HeaderMobile />
+//       </Grid.Column>
+//       </Grid>
+//       </div>
+//   )
+// }
+
+// export default LandingMobile;

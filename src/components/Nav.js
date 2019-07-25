@@ -25,9 +25,11 @@ const Nav = () => {
             </button>
           </div>
         </div>
+            <Fade left duration={2000} opposite when={toggle}>
           <div className="fixed">
-            {toggle === false ? <div /> : <Choices />}
+            {toggle === false ? <div /> : <Choices toggle={toggle}/>}
           </div>
+            </Fade>
         </Fade>
       </Grid.Column>
     </Grid>

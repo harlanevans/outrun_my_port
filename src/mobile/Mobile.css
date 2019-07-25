@@ -7,7 +7,7 @@
   /****** BackGrounds *******/
 
   .bg-landing {
-    background-image: url(https://media.giphy.com/media/26gshDkE2Nybaa1oY/giphy.gif);
+    background-image: url('../assets/Moon.gif');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,6 +18,14 @@
   .bg-portfolio {
     /* background-image: url(https://media.giphy.com/media/xUOwGcu6wd0cXBj5n2/giphy.gif); */
     background-image: url("../assets/PurplePalm.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .bg-about {
+    background-image: url('../assets/LAMobile.gif');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -128,7 +136,7 @@
     letter-spacing: 6px;
     font-size: 1.5em;
     font-weight: 700;
-    text-shadow: 1.3px 1.3px black;
+    text-shadow: .5px .5px white;
     /* border-bottom: 1px solid white; */
     padding: 0em 0em 1em 0em;
     /* border: solid 3px #9538c6; */
@@ -218,20 +226,22 @@
     justify-content: center;
     font-family: robo-font;
     color: white;
-    font-size: 1.4em;
-    padding: 0.1em .3em;
+    font-size: 1.3em;
+    padding: 0.1em .25em;
     margin: -0.5em 0em;
+    text-shadow: .5px .5px black;
     /* background-color: rgba(0, 0, 0, 0.3); */
     /* border: 1px solid white; */
   }
-
+  
   .choice-box-one:hover,
   .choice-box-two:hover,
   .choice-box-three:hover,
   .choice-box-four:hover {
-    font-size: 1.7em;
-    color: black;
-    text-shadow: .3px .3px white;
+    font-size: 1.5em;
+    animation: color-fade-text 5s infinite linear;
+    text-shadow: .5px .5px white;
+    /* color: #D432B9; */
   }
 
   .slide-animation-one {
@@ -266,7 +276,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10em 1em 0em 1em;
+    padding: 9.5em 0em 0em 0em;
   }
 
   h1.portfolio-header {
@@ -289,7 +299,7 @@
     letter-spacing: 8px;
     font-size: 1em;
     text-shadow: 1.3px 1.3px black;
-    padding: 1em 4em;
+    padding: 1em 2em;
     margin: 0em 0em;
   }
 
@@ -306,18 +316,37 @@
   }
 
   .main-box {
-    padding: 2em 0em;
+   padding: 0em 0em;
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+ }
+
+  /********* About *********/
+
+  .about-container {
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10em 1em 0em 1em;
   }
 
+  h1.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-family: robo-font;
+    letter-spacing: 8px;
+    font-size: 2em;
+    text-shadow: 1.3px 1.3px black;
+  }
 
 
   /******* MISC *******/
 
   .padding {
-    padding: 4em 0em;
+    padding: 3.5em 0em;
     margin: 2em 0em;
   }
 

@@ -6,6 +6,7 @@ import Resume from "../assets/HarlanEvans_Resume_PDF.pdf";
 import { Grid } from "semantic-ui-react";
 import { Fade } from "react-reveal";
 import ChoicesMob from "./ChoicesMob";
+import HeaderMobile from './HeaderMobile';
 
 const NavMobile = () => {
   const [toggle, setToggle] = useState(false);
@@ -15,7 +16,6 @@ const NavMobile = () => {
   };
 
   return (
-    <div className="bg-landing">
       <Grid columns={1} stackable>
         <Grid.Column>
           <Grid.Row centered>
@@ -38,8 +38,9 @@ const NavMobile = () => {
               </Fade>
             </div>
           </Grid.Row>
-          <div className="padding" />
-          <div className="title-container">
+          {/* <div className="padding" /> */}
+          {/* <HeaderMobile /> */}
+          {/* <div className="title-container">
             <Fade duration={2000} delay={1000}>
               <Grid.Row>
                 <h1 className="title">Harlan Evans</h1>
@@ -87,10 +88,10 @@ const NavMobile = () => {
                 </p>
               </Grid.Row>
             </Fade>
-          </div>
+          </div> */}
         </Grid.Column>
       </Grid>
-    </div>
+    // </div>
   );
 };
 export default NavMobile;

@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 
 // Mobile
 import PortMobile from './mobile/PortMobile';
+import AboutMobile from './mobile/AboutMobile';
 
 import "./App.css";
 import "./mobile/Mobile.css";
@@ -23,6 +24,7 @@ const App = () => {
         <Route exact path='/#portfolio' component={Portolio}/>
         <Route exact path='/#portmobile' component={PortMobile} />
         <Route exact path='/#about' component={About}/>
+        <Route exact path='/#aboutmobile' component={AboutMobile}/>
         <Route exact path='/contact' component={Contact}/>
       </Switch>
     </div>
