@@ -18,18 +18,18 @@ const Nav = () => {
     <Grid columns={2} stackable>
       <Grid.Column width={4}>
         <Fade left duration={3000}>
-        <div className='nav-container'>
+          <div className='nav-container' id="nav-index">
           <div className="rotate-icon">
             <button className="nav-button" onClick={toggleMenu}>
               <FontAwesomeIcon icon={faGripLinesVertical} />
             </button>
           </div>
         </div>
-            <Fade left duration={2000} opposite when={toggle}>
+            {/* <Fade left duration={2000} opposite when={toggle}> */}
           <div className="fixed">
             {toggle === false ? <div /> : <Choices toggle={toggle}/>}
           </div>
-            </Fade>
+            {/* </Fade> */}
         </Fade>
       </Grid.Column>
     </Grid>

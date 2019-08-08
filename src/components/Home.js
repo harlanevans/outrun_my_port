@@ -2,9 +2,13 @@ import React from "react";
 
 // Components
 import Landing from "./Landing";
-import FadeOne from "./color-grade/FadeOne";
 import Portfolio from "./Portfolio";
 import About from "./About";
+import Contact from './Contact';
+
+import FadeOne from "./color-grade/FadeOne";
+import FadeTwo from "./color-grade/FadeTwo";
+import FadeThree from './color-grade/FadeThree';
 
 // Mobile Components
 import NavMobile from "../mobile/NavMobile";
@@ -59,12 +63,17 @@ class Home extends React.Component {
           <div id="top">
             <Landing />
           </div>
-          {/* <FadeOne /> */}
+          <FadeOne />
           <div id="portfolio">
             <Portfolio />
           </div>
+          <FadeTwo />
           <div id="about">
             <About />
+          </div>
+          <FadeThree />
+          <div id="contact">
+            <Contact />
           </div>
         </div>
       );
