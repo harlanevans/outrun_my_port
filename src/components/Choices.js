@@ -11,18 +11,13 @@ class Choices extends React.Component {
   handleClick = (e, { name }) => {
     this.setState({ activeItem: name });
   };
-  // const Choices = () => {
-  //   const [activeItem, setActiveItem] = useState("");
-
-  //   const handleClick = (e, { name }) => {
-  //     setActiveItem(name);
-  //   };
+  
   render() {
     const { activeItem } = this.state;
     return (
       <div className="choice-container">
         <HashLink to="/#portfolio" smooth>
-          {/* <div className="slide-animation-one"> */}
+          <div className="slide-in-left-one">
           <Grid.Row className="choice-box-one">
             <Menu.Item
               name="portfolio"
@@ -32,10 +27,23 @@ class Choices extends React.Component {
               <div>Portfolio</div>
             </Menu.Item>
           </Grid.Row>
-          {/* </div> */}
+          </div>
         </HashLink>
+        {/* <HashLink to='/#skills' smooth >
+        <div className='slide-in-left-skills'>
+          <Grid.Row className='choice-box-skills'>
+            <Menu.Item
+            name='skills'
+            active={activeItem === 'skills'}
+            onClick={this.handleClick}
+            >
+              <div>Skills</div>
+            </Menu.Item>
+          </Grid.Row>
+        </div>
+        </HashLink> */}
         <HashLink to="/#about" smooth>
-          {/* <div className="slide-animation-two"> */}
+          <div className="slide-in-left-two">
           <Grid.Row className="choice-box-two">
             <Menu.Item
               name="about"
@@ -45,10 +53,10 @@ class Choices extends React.Component {
               About
             </Menu.Item>
           </Grid.Row>
-          {/* </div> */}
+          </div>
         </HashLink>
         <HashLink to="/#contact" smooth>
-          {/* <div className="slide-animation-three"> */}
+          <div className="slide-in-left-three">
           <Grid.Row className="choice-box-three">
             <Menu.Item
               name="contact"
@@ -58,10 +66,10 @@ class Choices extends React.Component {
               Contact
             </Menu.Item>
           </Grid.Row>
-          {/* </div> */}
+          </div>
         </HashLink>
         <HashLink to="/#top" smooth>
-          {/* <div className="slide-animation-four"> */}
+          <div className="slide-in-left-four">
           <Grid.Row className="choice-box-four">
             <Menu.Item
               name="to_top"
@@ -71,7 +79,7 @@ class Choices extends React.Component {
               To Top
             </Menu.Item>
           </Grid.Row>
-          {/* </div> */}
+          </div>
         </HashLink>
       </div>
     );

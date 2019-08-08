@@ -12,11 +12,16 @@ const PortMobile = () => {
             <Fade top duration={2000} delay={500}>
               <h1 className="portfolio-header">Portfolio</h1>
             </Fade>
-            <Fade duration={3000} delay={1000} style={{padding: '0em', margin: '0em'}}>
+            <Fade
+              duration={3000}
+              delay={1000}
+              style={{ padding: "0em", margin: "0em" }}
+            >
               <Grid.Column className="main-box">
                 <a
                   href="https://devpointstudiosslc.netlify.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Grid.Row className="port-box-one">
                     <h4 className="port-link">
@@ -24,7 +29,11 @@ const PortMobile = () => {
                     </h4>
                   </Grid.Row>
                 </a>
-                <a href="https://sxexp.herokuapp.com/" target="_blank">
+                <a
+                  href="https://sxexp.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Grid.Row className="port-box-two">
                     <h4 className="port-link">Southern Cross Humanitarian</h4>
                   </Grid.Row>
@@ -32,6 +41,7 @@ const PortMobile = () => {
                 <a
                   href="https://terra-nova-cabins.herokuapp.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Grid.Row className="port-box-two">
                     <h4 className="port-link">Terra Nova Cabins</h4>
