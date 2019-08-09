@@ -10,6 +10,7 @@ import Nav from './Nav';
 import FadeOne from "./color-grade/FadeOne";
 import FadeTwo from "./color-grade/FadeTwo";
 import FadeThree from './color-grade/FadeThree';
+import EndFade from './color-grade/EndFade';
 
 // Mobile Components
 import NavMobile from "../mobile/NavMobile";
@@ -77,6 +78,7 @@ class Home extends React.Component {
           <div id="contact">
             <Contact />
           </div>
+          <EndFade />
         </div>
       );
     }

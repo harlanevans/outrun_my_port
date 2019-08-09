@@ -110,6 +110,18 @@
 
   }
 
+  .bg-end-fade {
+    background: #8946A6;
+    background: linear-gradient(180deg, #8946A6 0%, #FFCEC2 100%);
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    /* margin: -20em 0em 0em 0em; */
+    position: relative;
+    z-index: -100;
+  }
+
 
   /************* INDEX ***************/
 
@@ -487,6 +499,37 @@
     letter-spacing: 8px;
     font-size: 3em;
     text-shadow: .5px .5px #1F032E;
+  }
+
+  .contact-box-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em 8em;
+    margin: 3em 0em;
+    border: solid 5px#9538C6;
+    border-radius: 3px;
+    animation: color-fade-border 8s infinite linear;
+  }
+
+  .contact-box-one:hover {
+    background-color: rgba(137, 70, 166, 0.7);
+    transition: 1s;
+  }
+
+  .contact-p {
+    color: white !important;
+    text-shadow: .5px .5px #1F032E;
+
+  }
+
+  .contact-main-box {
+    padding: 3em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+    /* align-content: flex-end; */
   }
 
 

@@ -8,7 +8,22 @@ const Contact = () => {
     <div className='bg-contact'>
     <Grid columns={3}>
         <Grid.Column style={{ zIndex: "-100" }}/>
-      <Grid.Column />
+        <Grid.Column stretched
+          verticalAlign="bottom"
+          style={{ padding: "12em 0em" }}>
+          <div className="contact-main-box">
+            <div className='contact-box-one'>
+            <h3 className='contact-p'>Email Me</h3>
+            </div>
+            <div className='contact-box-one'>
+            <h3 className='contact-p'>Call Me</h3>
+            </div>
+            <div className='contact-box-one'>
+            <h3 className='contact-p'>Stalk Me</h3>
+            </div>
+          </div>
+
+      </Grid.Column>
       <Grid.Column>
         <div className='contact-h-container'>
         <Fade right duration={3000}>
