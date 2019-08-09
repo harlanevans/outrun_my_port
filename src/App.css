@@ -29,7 +29,7 @@
     width: 100vw;
     height: 100vh;
     position: initial;
-    z-index: -100;
+    z-index: -100 !important;
   }
 
 
@@ -51,9 +51,9 @@
     height: 100vh;
     position: initial;
     z-index: -100;
-    
+
   }
-  
+
   .bg-contact {
     background-image: url('./assets/BlazingSun.gif');
     background-size: cover;
@@ -86,12 +86,17 @@
     left: 0px;
     width: 100vw;
     height: 200vh;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* margin: -20em 0em 0em 0em; */
     position: relative;
     z-index: -100;
-    
+
   }
-  
+
   .bg-fade-three {
     background: rgba(130, 189, 227, 100);
     background: linear-gradient(180deg, rgba(130, 189, 227, 100) 0%, rgba(255, 227, 197, 1) 100%);
@@ -102,7 +107,7 @@
     /* margin: -20em 0em 0em 0em; */
     position: relative;
     z-index: -100;
-    
+
   }
 
 
@@ -113,7 +118,7 @@
   }
 
   #nav-index {
-    z-index: 10;
+    z-index: 100;
   }
 
   /********* NavBar ********/
@@ -316,7 +321,7 @@
     position: fixed;
     margin-top: 15em;
     margin-left: -2em;
-    z-index: 10;
+    z-index: 200;
   }
 
   .choice-box-one,
@@ -332,7 +337,9 @@
     font-size: 2em;
     padding: 1em 3em;
     width: 100%;
-    z-index: 10;
+    z-index: 200;
+    text-shadow: .5px .5px #1F032E;
+
   }
 
   .choice-box-one:hover,
@@ -455,26 +462,32 @@
     /* color: white; */
   }
 
-  h1.abou {
-    color: white;
-    font-family: robo-font;
-    letter-spacing: 8px;
-    font-size: 3em;
-  }
-
   h1.about {
     color: white;
     font-family: robo-font;
     letter-spacing: 8px;
     font-size: 3em;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-end; */
-    padding: 2em 0em;
-    margin: 1em 1em;
+    text-shadow: .5px .5px #1F032E;
+
   }
 
+  /********** Contact  ***********/
 
+  .contact-h-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5em 5em;
+
+  }
+
+  h1.contact-header {
+    color: white;
+    font-family: robo-font;
+    letter-spacing: 8px;
+    font-size: 3em;
+    text-shadow: .5px .5px #1F032E;
+  }
 
 
   /******** Fade One Dot  **********/
@@ -565,18 +578,54 @@
 
   .fade-two-cont {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    justify-items: center;
+    align-items: center;
   }
 
-  .rectangle-one {
-    border: 2px solid red;
-    padding: 2em 2em;
+  .rectangle-one,
+  .rectangle-two,
+  .rectangle-three,
+  .rectangle-four,
+  .rectangle-five,
+  .rectangle-six,
+  .rectangle-seven {
+    border-radius: 3px;
+    background-color: #9538c6;
+    padding: 1em 15em;
+    animation: color-fade-bg 10s linear infinite;
+    animation-delay: .5s;
+    z-index: 200;
+  }
+
+  .rectangle-one:hover,
+  .rectangle-two:hover,
+  .rectangle-three:hover,
+  .rectangle-four:hover,
+  .rectangle-five:hover,
+  .rectangle-six:hover,
+  .rectangle-seven:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  .rect-row {
+    padding: 5em 0em;
   }
 
   h1.fade-header {
-    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     color: white;
+    font-family: robo-font;
+    letter-spacing: 8px;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: .5px .5px #1F032E;
+    padding: 0em 0em 1.25em 0em;
+    margin: 0em;
   }
 
   /******** KeyFrames and Animations ********/
@@ -786,40 +835,33 @@
 
   @keyframes color-fade-bg {
     0% {
-      /* background-color: #9538c6; */
-      background-position: 0% 50%;
+      background-color: #9538c6;
     }
 
     15% {
-      /* background-color: #d93a61; */
-      background-position: 100% 50%;
+      background-color: #d93a61;
     }
 
     30% {
-      /* background-color: #F5C9AA; */
-      background-position: 0% 50%;
+      background-color: #F5C9AA;
       /* text-shadow: .1px .1px white; */
       /* background-color: white */
     }
 
     45% {
-      /* background-color: #F2786E; */
-      background-position: 45% 60%;
+      background-color: #F2786E;
     }
 
     60% {
-      /* background-color: #3c2d9b; */
-      background-position: 60% 75%;
+      background-color: #3c2d9b;
     }
 
     75% {
-      /* background-color: #d432b9; */
-      background-position: 75% 100%;
+      background-color: #d432b9;
     }
 
     100% {
-      /* background-color: #9538c6; */
-      background-position: 100% 0%;
+      background-color: #9538c6;
     }
   }
 

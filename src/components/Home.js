@@ -5,6 +5,7 @@ import Landing from "./Landing";
 import Portfolio from "./Portfolio";
 import About from "./About";
 import Contact from './Contact';
+import Nav from './Nav';
 
 import FadeOne from "./color-grade/FadeOne";
 import FadeTwo from "./color-grade/FadeTwo";
@@ -60,6 +61,7 @@ class Home extends React.Component {
     } else {
       return (
         <div>
+          <Nav />
           <div id="top">
             <Landing />
           </div>
