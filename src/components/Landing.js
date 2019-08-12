@@ -10,12 +10,8 @@ const Landing = () => {
       <div class="bg-landing">
         <Grid columns={3} stackable stretched textAlign="center">
         <Grid.Column style={{zIndex: '-100'}}/>
-          <Grid.Column textAlign="left">
-            <Grid.Row textAlign="left">
               {/* <Nav /> */}
               <Header />
-            </Grid.Row>
-          </Grid.Column>
         <Grid.Column />
         </Grid>
       </div>

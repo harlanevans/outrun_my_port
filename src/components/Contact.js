@@ -8,9 +8,9 @@ const Contact = () => {
     <div className='bg-contact'>
     <Grid columns={3}>
         <Grid.Column style={{ zIndex: "-100" }}/>
-        <Grid.Column stretched
+        <Grid.Column
           verticalAlign="bottom"
-          style={{ padding: "12em 0em" }}>
+          style={{ padding: "10em 2em 0em 2em" }}>
           <div className="contact-main-box">
             <div className='contact-box-one'>
             <h3 className='contact-p'>Email Me</h3>

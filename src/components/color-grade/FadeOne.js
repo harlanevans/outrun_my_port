@@ -9,6 +9,7 @@ const FadeOne = () => (
         <Fade duration={3000}>
           <div className="dot-container">
             {/***** DOT ********/}
+            <div className='dot-text-col'>
             <div className="dot">
               <Fade delay={400} duration={3000}>
                 <Grid.Row className="dot-row-title">
@@ -29,6 +30,8 @@ const FadeOne = () => (
                   <p className="dot-title">Sketch</p>
                 </Grid.Row>
               </Fade>
+              </div>
+
             </div>
           </div>
         </Fade>

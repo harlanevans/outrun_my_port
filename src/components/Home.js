@@ -78,7 +78,7 @@ class Home extends React.Component {
           <div id="contact">
             <Contact />
           </div>
-          <EndFade />
+          {/* <EndFade /> */}
         </div>
       );
     }
