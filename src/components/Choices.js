@@ -29,19 +29,6 @@ class Choices extends React.Component {
           </Grid.Row>
           </div>
         </HashLink>
-        {/* <HashLink to='/#skills' smooth >
-        <div className='slide-in-left-skills'>
-          <Grid.Row className='choice-box-skills'>
-            <Menu.Item
-            name='skills'
-            active={activeItem === 'skills'}
-            onClick={this.handleClick}
-            >
-              <div>Skills</div>
-            </Menu.Item>
-          </Grid.Row>
-        </div>
-        </HashLink> */}
         <HashLink to="/#about" smooth>
           <div className="slide-in-left-two">
           <Grid.Row className="choice-box-two">

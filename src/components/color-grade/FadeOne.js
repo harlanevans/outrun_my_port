@@ -4,14 +4,13 @@ import { Grid } from "semantic-ui-react";
 
 const FadeOne = () => (
   <div className="bg-fade-one">
-    <Fade>
+    <Fade duration={2000}>
       <Grid.Column>
-        <Fade duration={3000}>
           <div className="dot-container">
             {/***** DOT ********/}
             <div className='dot-text-col'>
             <div className="dot">
-              <Fade delay={400} duration={3000}>
+              <Fade duration={3000}>
                 <Grid.Row className="dot-row-title">
                   <h4 className="dot-title">
                     <i>Skills:</i>
@@ -20,8 +19,6 @@ const FadeOne = () => (
                   <h5 className="dot-title">HTML, CSS Frameworks, UI/UX</h5>
                   <h5 className="dot-title">Ruby on Rails, Git/GitHub</h5>
                 </Grid.Row>
-              </Fade>
-              <Fade delay={400} duration={3000}>
                 <Grid.Row className="dot-row-title">
                   <h6 className="dot-title">
                     <i>Currently Learning:</i>
@@ -34,7 +31,6 @@ const FadeOne = () => (
 
             </div>
           </div>
-        </Fade>
       </Grid.Column>
     </Fade>
   </div>

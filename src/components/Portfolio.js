@@ -15,7 +15,7 @@ const Portfolio = () => {
         >
           <Fade
             duration={3000}
-            delay={1300}
+            delay={500}
             style={{ padding: "0em", margin: "0em" }}
           >
           <div className="main-box">

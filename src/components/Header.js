@@ -32,6 +32,11 @@ const Header = () => {
             </h3>
           </Grid.Row>
         </Fade>
+        <Fade bottom delay={1850} duration={3000}>
+          <Grid.Row className="row-title">
+            <p className="title-scroll">Scroll &darr;</p>
+          </Grid.Row>
+        </Fade>
       </div>
     </Grid.Column>
   );
