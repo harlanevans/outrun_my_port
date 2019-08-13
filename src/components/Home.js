@@ -10,13 +10,17 @@ import Nav from './Nav';
 import FadeOne from "./color-grade/FadeOne";
 import FadeTwo from "./color-grade/FadeTwo";
 import FadeThree from './color-grade/FadeThree';
-import EndFade from './color-grade/EndFade';
 
 // Mobile Components
 import NavMobile from "../mobile/NavMobile";
 import HeaderMobile from "../mobile/HeaderMobile";
 import PortMobile from "../mobile/PortMobile";
 import AboutMobile from "../mobile/AboutMobile";
+import ContactMobile from '../mobile/ContactMobile';
+
+import MFadeOne from '../mobile/Fade/MFadeOne';
+import MFadeTwo from '../mobile/Fade/MFadeTwo';
+import MFadeThree from '../mobile/Fade/MFadeThree';
 
 class Home extends React.Component {
   state = {
@@ -46,16 +50,20 @@ class Home extends React.Component {
       return (
         <div>
           <div className="bg-landing">
-            <div id="top">
               <NavMobile />
+            <div id="top">
               <HeaderMobile />
             </div>
           </div>
+          <MFadeOne />
           <div id="portmobile">
             <PortMobile />
           </div>
           <div id="aboutmobile">
           <AboutMobile />
+          </div>
+          <div id='contactmobile'>
+          <ContactMobile />
           </div>
         </div>
       );
@@ -78,7 +86,6 @@ class Home extends React.Component {
           <div id="contact">
             <Contact />
           </div>
-          {/* <EndFade /> */}
         </div>
       );
     }

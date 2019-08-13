@@ -3,7 +3,6 @@ import React from "react";
 import { Grid } from "semantic-ui-react";
 import { Fade } from "react-reveal";
 
-import { Insta } from "../assets/IGLogo.jpg";
 
 const Contact = () => {
   return (
@@ -32,13 +31,18 @@ const Contact = () => {
                   href="https://www.instagram.com/harlansevans/"
                   target="_blank"
                   className="social"
+                  rel="noopener noreferrer"
                 >
-                  <ion-icon name="logo-instagram" style={{ color: "white" }} />
+                  <ion-icon
+                    name="logo-instagram"
+                    style={{ color: "white" }}
+                  />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/harlan-evans-b08027156/"
                   target="_blank"
                   className="social"
+                  rel="noopener noreferrer"
                 >
                   <ion-icon name="logo-linkedin" style={{ color: "white" }} />
                 </a>
@@ -46,6 +50,7 @@ const Contact = () => {
                   href="https://github.com/harlanevans"
                   target="_blank"
                   className="social"
+                  rel="noopener noreferrer"
                 >
                   <ion-icon name="logo-github" style={{ color: "white" }} />
                 </a>

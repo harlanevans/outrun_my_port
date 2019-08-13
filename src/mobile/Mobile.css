@@ -4,7 +4,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-  /****** BackGrounds *******/
+
+  /********************* BackGrounds *********************/
 
   .bg-landing {
     background-image: url('../assets/Moon.gif');
@@ -13,6 +14,7 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    z-index: -100;
   }
 
   .bg-portfolio {
@@ -22,6 +24,7 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    z-index: -100;
   }
 
   .bg-about {
@@ -30,9 +33,26 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    z-index: -100;
   }
 
-  /****** Navbar *******/
+  .bg-fade-one {
+    background: rgb(35, 5, 68);
+    background: linear-gradient(180deg,
+        rgba(35, 5, 68, 1) 0%,
+        rgba(28, 0, 21, 1) 100%);
+    width: 100vw;
+    height: 200vh;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: -100;
+  }
+
+  /********************* Navbar *********************/
 
   .nav-container {
     display: flex;
@@ -81,7 +101,7 @@
     }
   }
 
-  /******* Title/Header *******/
+  /********************* Title/Header *********************/
 
   .title-container {
     display: flex;
@@ -99,112 +119,39 @@
   }
 
 
-  h1.title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    color: white;
-    font-family: robo-font;
-    letter-spacing: 4px;
-    font-size: 2.7em;
-    font-weight: 500;
-    text-shadow: 2px 2px black;
-    padding: 0em 0em .5em 0em;
-  }
-
-  h3.title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-    font-family: robo-font;
-    letter-spacing: 4px;
-    font-size: 2em;
-    font-weight: 700;
-    text-shadow: 1.3px 1.3px black;
-    /* border-bottom: 1px solid white; */
-    padding: 0em 0em 1em 0em;
-  }
-
-  h4.title {
+  .title-resume,
+  .title-misc,
+  .title-name,
+  .scroll {
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: white;
     font-family: robo-font;
     letter-spacing: 6px;
+    font-weight: 700;
+    padding: 1em 0em;
+    text-shadow: 1px 1px #1f032e;
+  }
+
+  .title-name {
+    font-size: 2em;
+  }
+
+  .title-resume {
     font-size: 1.5em;
-    font-weight: 700;
-    text-shadow: .5px .5px white;
-    /* border-bottom: 1px solid white; */
-    padding: 0em 0em 1em 0em;
-    /* border: solid 3px #9538c6; */
-    transition: 5s ease-in-out;
-    animation: color-fade-text 8s infinite linear;
-    /* animation: color-fade-text 1s infinite linear; */
   }
 
-
-
-  h5.title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: white;
-    font-family: robo-font;
-    letter-spacing: 1px;
-    font-size: 1.25em;
-    font-weight: 700;
-    padding: 0em 0em;
-    margin: .5em;
-    text-shadow: 1.3px 1.3px black;
-    /* border-bottom: 1px solid white; */
-    /* border: 1px solid white; */
+  .title-misc {
+    font-size: 2em;
   }
 
-  h6.title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: white;
-    font-family: robo-font;
-    letter-spacing: 1px;
+  .scroll {
     font-size: 1em;
-    font-weight: 700;
-    padding: 0em 0em;
-    text-shadow: 1.3px 1.3px black;
-    margin: .5em;
-
+    padding-top: 5em;
   }
 
-  p.title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: white;
-    font-family: robo-font;
-    letter-spacing: 1px;
-    font-size: 1em;
-    font-weight: 700;
-    margin: 0em;
-    /* padding: .2em 0em; */
-    text-shadow: 1.3px 1.3px black;
-
-  }
-
-  h1.title:hover,
-  h3.title:hover,
-  h5.title:hover {
-    transition: 5s ease-in-out;
-  }
-
-
-
-  /****** Choices  ******/
+  /********************* Choices  *********************/
 
   .choice-container {
     display: flex;
@@ -233,7 +180,7 @@
     /* background-color: rgba(0, 0, 0, 0.3); */
     /* border: 1px solid white; */
   }
-  
+
   .choice-box-one:hover,
   .choice-box-two:hover,
   .choice-box-three:hover,
@@ -268,8 +215,88 @@
   }
 
 
+  /********************** Fade One | Dot **********************/
 
-  /******** Portfolio *********/
+
+  .dot-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .dot-text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 2em 0em; */
+  }
+
+  .dot-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20em;
+    height: 20em;
+    background: linear-gradient(180deg,
+        #9538c6,
+        #f5c9aa,
+        #d93a61,
+        #f2786e,
+        #3c2d9b,
+        #d432b9,
+        #9538c6);
+    background-size: 500% 500%;
+    border-radius: 50%;
+    animation: color-fade-bg-linear 5s ease-in-out infinite;
+    margin: 1em 0em;
+  }
+
+  .dot-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20em;
+    height: 20em;
+    background: linear-gradient(180deg,
+        #f5c9aa,
+        #d432b9,
+        #9538c6,
+        #d93a61,
+        #f2786e,
+        #3c2d9b,
+        #9538c6);
+    background-size: 500% 500%;
+    border-radius: 50%;
+    animation: color-fade-bg-linear 5s ease-in-out infinite;
+    margin: 1em 0em;
+    
+  }
+
+
+  .dot-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-family: robo-font;
+    letter-spacing: 2px;
+    font-size: 1em;
+    font-weight: 700;
+    text-shadow: 0.5px 0.5px #1f032e;
+    padding: 0em 0em .75em 0em;
+    margin: 0em;
+  }
+
+  h6.dot-title {
+    font-size: 1.25em;
+    font-weight: 700;
+    text-shadow: 0.5px 0.5px #1f032e;
+    margin: 0em;
+  }
+
+
+
+  /********************* Portfolio *********************/
 
 
   .portfolio-container {
@@ -316,13 +343,13 @@
   }
 
   .main-box {
-   padding: 0em 0em;
-   display: flex;
-   flex-direction: column;
-   align-content: center;
- }
+    padding: 0em 0em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 
-  /********* About *********/
+  /********************* About *********************/
 
   .about-container {
     display: flex;
@@ -343,14 +370,14 @@
   }
 
 
-  /******* MISC *******/
+  /********************* MISC *********************/
 
   .padding {
     padding: 3.5em 0em;
     margin: 2em 0em;
   }
 
-  /******* KeyFrames and Animations *******/
+  /********************* KeyFrames and Animations *********************/
 
   @keyframes color-fade {
     0% {
