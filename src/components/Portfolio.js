@@ -20,15 +20,6 @@ const Portfolio = () => {
           >
           <div className="main-box">
             <a
-              href="https://devpointstudiosslc.netlify.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Grid.Row className="port-box-one">
-                <h4 className="port-link">DevPointStudios <br/>Coming-Soon Page</h4>
-              </Grid.Row>
-            </a>
-            <a
               href="https://sxexp.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -36,6 +27,15 @@ const Portfolio = () => {
             >
               <Grid.Row className="port-box-one">
                 <h4 className="port-link">Southern Cross <br/> Humanitarian</h4>
+              </Grid.Row>
+            </a>
+            <a
+              href="https://devpointstudiosslc.netlify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Grid.Row className="port-box-one">
+                <h4 className="port-link">DevPointStudios <br/>Coming-Soon</h4>
               </Grid.Row>
             </a>
             <a

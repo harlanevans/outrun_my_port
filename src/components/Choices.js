@@ -23,7 +23,7 @@ class Choices extends React.Component {
               active={activeItem === "portfolio"}
               onClick={this.handleClick}
             >
-              <div>Portfolio</div>
+              <div style={{zIndex: '100'}}>Portfolio</div>
             </Menu.Item>
           </Grid.Row>
           </div>
@@ -36,7 +36,9 @@ class Choices extends React.Component {
               active={activeItem === "about"}
               onClick={this.handleClick}
             >
+            <div style={{zIndex: '100'}}>
               About
+            </div>
             </Menu.Item>
           </Grid.Row>
           </div>
@@ -49,7 +51,9 @@ class Choices extends React.Component {
               active={activeItem === "contact"}
               onClick={this.handleClick}
             >
+            <div  style={{zIndex: '100'}}>
               Contact
+            </div>
             </Menu.Item>
           </Grid.Row>
           </div>
@@ -62,7 +66,9 @@ class Choices extends React.Component {
               active={activeItem === "to_top"}
               onClick={this.handleClick}
             >
+            <div  style={{zIndex: '100'}}>
               To Top
+            </div>
             </Menu.Item>
           </Grid.Row>
           </div>

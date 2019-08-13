@@ -6,14 +6,23 @@ import Resume from "../assets/HarlanEvans_Resume.pdf";
 
 const Header = () => {
   return (
-    <Grid.Column width={12} textAlign="center">
+    <Grid.Column textAlign="right" width={8}>
+    <div className="title-right">
+
       <div className="title-container">
-        <Fade delay={500} duration={3000}>
+        <Fade right delay={500} duration={3000}>
           <Grid.Row className="row-title">
             <h1 className="title">Harlan Evans</h1>
           </Grid.Row>
         </Fade>
-        <Fade delay={1500} duration={3000} big>
+        <Fade right delay={1000} duration={3000}>
+          <Grid.Row className="row-title">
+            <h3 className="title">
+              {"<"}Web Developer{">"}
+            </h3>
+          </Grid.Row>
+        </Fade>
+        <Fade bottom right delay={1500} duration={3500}>
           <a
             href={Resume}
             target="_blank"
@@ -25,19 +34,13 @@ const Header = () => {
             </Grid.Row>
           </a>
         </Fade>
-        <Fade delay={1000} duration={3000}>
-          <Grid.Row className="row-title">
-            <h3 className="title">
-              {"<"}Web Developer{">"}
-            </h3>
-          </Grid.Row>
-        </Fade>
-        <Fade bottom delay={1850} duration={3000}>
+        <Fade bottom delay={1850} duration={4000}>
           <Grid.Row className="row-title">
             <p className="title-scroll">Scroll &darr;</p>
           </Grid.Row>
         </Fade>
       </div>
+    </div>
     </Grid.Column>
   );
 };

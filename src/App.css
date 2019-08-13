@@ -186,13 +186,19 @@ ion-icon {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-content: space-between;
-    align-items: center;
+    align-content: flex-end;
+    align-items: flex-end;
     padding: 1em;
   }
 
+  .title-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
   .row-title {
-    padding: 3em 1em 2em 1em;
+    padding: 3em 2em 0em 0em;
     width: 100%;
     /* border-bottom: 1px solid white; */
   }
@@ -203,7 +209,7 @@ ion-icon {
     justify-content: center;
     color: white;
     font-family: robo-font;
-    letter-spacing: 12px;
+    letter-spacing: 10px;
     font-size: 4em;
     font-weight: 500;
     text-shadow: 2px 2px black;
@@ -215,8 +221,8 @@ ion-icon {
     justify-content: center;
     color: white;
     font-family: robo-font;
-    letter-spacing: 12px;
-    font-size: 3em;
+    letter-spacing: 6px;
+    font-size: 2.5em;
     font-weight: 500;
     text-shadow: 1px 1px black;
   }
@@ -224,7 +230,7 @@ ion-icon {
   h4.title-resume {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     color: white;
     font-family: robo-font;
     letter-spacing: 6px;
@@ -238,7 +244,8 @@ ion-icon {
   .title-scroll {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     color: white;
     font-family: robo-font;
     letter-spacing: 6px;
@@ -338,7 +345,7 @@ ion-icon {
     position: fixed;
     margin-top: 15em;
     margin-left: -2em;
-    z-index: 200;
+    z-index: 300;
   }
 
   .choice-box-one,
@@ -354,8 +361,8 @@ ion-icon {
     font-size: 2em;
     padding: 1em 3em;
     width: 100%;
-    z-index: 200;
-    text-shadow: 0.5px 0.5px #1f032e;
+    z-index: 300;
+    text-shadow: 1px 1px #1f032e;
   }
 
   .choice-box-one:hover,
@@ -365,7 +372,7 @@ ion-icon {
   .choice-box-skills:hover {
     width: 120%;
     transition: 1s ease-in-out;
-    animation: color-fade-text 2s infinite linear;
+    /* animation: color-fade-text 2s infinite linear; */
   }
 
   a {
@@ -424,6 +431,8 @@ ion-icon {
     font-family: robo-font;
     letter-spacing: 8px;
     font-size: 3em;
+    text-shadow: 0.5px 0.5px #1f032e;
+
   }
 
   .main-box {
@@ -438,12 +447,13 @@ ion-icon {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     color: white;
     font-family: robo-font;
     letter-spacing: 5px;
     font-size: 1.25em;
-    text-shadow: 1px 1px black;
+    text-shadow: 1.25px 1.25px #1f032e;
     margin: 0em 0em;
   }
 
@@ -451,6 +461,7 @@ ion-icon {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     padding: 2em 8em;
     margin: 1em 0em;
@@ -488,7 +499,7 @@ ion-icon {
     font-family: robo-font;
     letter-spacing: 8px;
     font-size: 1.25em;
-    text-shadow: 0.75px 0.75px #1f032e;
+    text-shadow: 1.25px 1.25px #1f032e;
   }
 
   .abt-txt-cont {
@@ -518,7 +529,7 @@ ion-icon {
     font-family: robo-font;
     letter-spacing: 8px;
     font-size: 3em;
-    text-shadow: 0.5px 0.5px #1f032e;
+    text-shadow: 1px 1px #1f032e;
   }
 
   .contact-box-one {
@@ -553,7 +564,7 @@ ion-icon {
 
   .contact-p {
     color: white !important;
-    text-shadow: 0.5px 0.5px #1f032e;
+    text-shadow: 1px 1px #1f032e;
     font-family: robo-font;
     letter-spacing: 3px;
   }
@@ -639,10 +650,10 @@ ion-icon {
     justify-content: center;
     color: white;
     font-family: robo-font;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
     font-size: 1.5em;
     font-weight: 700;
-    text-shadow: 0.5px 0.5px #1f032e;
+    text-shadow: 1.1px 1.1px #1f032e;
     padding: 0em 0em 1.25em 0em;
     margin: 0em;
   }
@@ -653,10 +664,10 @@ ion-icon {
     justify-content: center;
     color: white;
     font-family: robo-font;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: 1em;
     font-weight: 700;
-    text-shadow: 0.5px 0.5px #1f032e;
+    text-shadow: 1.1px 1.1px #1f032e;
     padding: 0em 0em 1.25em 0em;
     margin: 0em;
   }
@@ -670,7 +681,7 @@ ion-icon {
     letter-spacing: 4px;
     font-size: 1.25em;
     font-weight: 700;
-    text-shadow: 0.5px 0.5px #1f032e;
+    text-shadow: 1.1px 1.1px #1f032e;
     padding: 0em 0em 1.25em 0em;
     margin: 0em;
   }
@@ -681,10 +692,10 @@ ion-icon {
     justify-content: center;
     color: white;
     font-family: robo-font;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: 1em;
     font-weight: 700;
-    text-shadow: 0.5px 0.5px #1f032e;
+    text-shadow: 1.1px 1.1px #1f032e;
     padding: 0em 0em 1.25em 0em;
     margin: 0em;
   }

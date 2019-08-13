@@ -44,7 +44,10 @@ const Contact = () => {
                   className="social"
                   rel="noopener noreferrer"
                 >
-                  <ion-icon name="logo-linkedin" style={{ color: "white" }} />
+                  <ion-icon
+                    name="logo-linkedin"
+                    style={{ color: "white", textShadow: "1px 1px #1f032e" }}
+                  />
                 </a>
                 <a
                   href="https://github.com/harlanevans"
