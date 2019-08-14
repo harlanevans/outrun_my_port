@@ -19,23 +19,24 @@ const PortMobile = () => {
             >
               <Grid.Column className="main-box">
                 <a
+                  href="https://sxexp.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Grid.Row className="port-box-two">
+                    <h4 className="port-link">
+                      <center>Southern Cross Humanitarian</center></h4>
+                  </Grid.Row>
+                </a>
+                <a
                   href="https://devpointstudiosslc.netlify.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Grid.Row className="port-box-one">
                     <h4 className="port-link">
-                      DevPointStudios Coming Soon Page
+                      <center>DevPointStudios <br />Coming Soon</center>
                     </h4>
-                  </Grid.Row>
-                </a>
-                <a
-                  href="https://sxexp.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Grid.Row className="port-box-two">
-                    <h4 className="port-link">Southern Cross Humanitarian</h4>
                   </Grid.Row>
                 </a>
                 <a
@@ -44,7 +45,7 @@ const PortMobile = () => {
                   rel="noopener noreferrer"
                 >
                   <Grid.Row className="port-box-two">
-                    <h4 className="port-link">Terra Nova Cabins</h4>
+                    <h4 className="port-link"><center>Terra Nova Cabins</center></h4>
                   </Grid.Row>
                 </a>
               </Grid.Column>

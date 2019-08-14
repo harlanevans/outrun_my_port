@@ -26,7 +26,7 @@ const Portfolio = () => {
               style={{padding: "1em 0em"}}
             >
               <Grid.Row className="port-box-one">
-                <h4 className="port-link">Southern Cross <br/> Humanitarian</h4>
+                  <h4 className="port-link"><center>Southern Cross <br /> Humanitarian</center></h4>
               </Grid.Row>
             </a>
             <a
@@ -35,7 +35,7 @@ const Portfolio = () => {
               rel="noopener noreferrer"
             >
               <Grid.Row className="port-box-one">
-                <h4 className="port-link">DevPointStudios <br/>Coming-Soon</h4>
+                  <h4 className="port-link"><center>DevPointStudios <br />Coming-Soon</center></h4>
               </Grid.Row>
             </a>
             <a
@@ -44,7 +44,7 @@ const Portfolio = () => {
               rel="noopener noreferrer"
             >
               <Grid.Row className="port-box-one">
-                <h4 className="port-link">Terra Nova Cabins</h4>
+                  <h4 className="port-link"><center>Terra Nova Cabins</center></h4>
               </Grid.Row>
             </a>
               </div>

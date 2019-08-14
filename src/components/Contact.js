@@ -3,7 +3,6 @@ import React from "react";
 import { Grid } from "semantic-ui-react";
 import { Fade } from "react-reveal";
 
-
 const Contact = () => {
   return (
     <div className="bg-contact">
@@ -33,10 +32,7 @@ const Contact = () => {
                   className="social"
                   rel="noopener noreferrer"
                 >
-                  <ion-icon
-                    name="logo-instagram"
-                    style={{ color: "white" }}
-                  />
+                  <ion-icon name="logo-instagram" style={{ color: "white" }} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/harlan-evans-b08027156/"
@@ -61,6 +57,15 @@ const Contact = () => {
               </div>
             </div>
           </Fade>
+          <Grid.Row>
+            <div className='art-box'>
+            <h3 className="artwork-cred">
+              <a href="https://lush-boy.tumblr.com" target="_blank" rel="noopener noreferrer" className='art'>
+               Artwork by LushBoy
+              </a>
+            </h3>
+            </div>
+          </Grid.Row>
         </Grid.Column>
         <Grid.Column>
           <div className="contact-h-container">

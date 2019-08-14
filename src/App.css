@@ -575,7 +575,7 @@ ion-icon {
     font-family: robo-font;
     letter-spacing: 3px;
   }
-
+  
   .contact-main-box {
     padding: 3em 0em 0em 0em;
     display: flex;
@@ -583,18 +583,35 @@ ion-icon {
     justify-content: space-around !important;
     /* align-content: flex-end; */
   }
-
+  
   .cont-a {
     padding: 0.1em;
     margin: 0.1em;
   }
-
+  
   .social {
     color: white;
   }
-
-  .social:hover {
-    animation: color-fade 4s linear infinite;
+  
+  .art-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .artwork-cred {
+    /* color: white; */
+    text-shadow: 0.5px 0.5px #1f032e;
+    font-family: robo-font;
+    letter-spacing: 3px;
+    font-size: 1em;
+    animation: color-fade-text 6s linear infinite;
+  }
+  
+  a.art:hover {
+    animation: color-fade-text 4s linear infinite;
+    transition: 2s;
+    letter-spacing: 6px;
   }
 
   /********************* Fade One Dot  *********************/

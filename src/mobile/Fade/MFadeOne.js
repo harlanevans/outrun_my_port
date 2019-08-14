@@ -7,7 +7,6 @@ const MFadeOne = () => {
     return (
       <div className="bg-fade-one">
         <Fade duration={2000}>
-          <Grid.Column>
             <div className="dot-container">
               {/***** DOT ********/}
               <div className='dot-text-col'>
@@ -35,7 +34,6 @@ const MFadeOne = () => {
               </div>
               </div>
             </div>
-          </Grid.Column>
         </Fade>
       </div>
     )

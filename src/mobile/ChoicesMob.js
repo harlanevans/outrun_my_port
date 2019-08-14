@@ -13,7 +13,7 @@ const ChoicesNav = () => {
         <HashLink to="/#aboutmobile" smooth>
           <Grid.Row className="choice-box-two">About</Grid.Row>
         </HashLink>
-        <HashLink to="/#contact" smooth>
+        <HashLink to="/#contactmobile" smooth>
           <Grid.Row className="choice-box-three">Contact</Grid.Row>
         </HashLink>
         <HashLink to="/#top" smooth>

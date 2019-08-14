@@ -59,9 +59,11 @@ class Home extends React.Component {
           <div id="portmobile">
             <PortMobile />
           </div>
+          <MFadeTwo />
           <div id="aboutmobile">
           <AboutMobile />
           </div>
+          <MFadeThree />
           <div id='contactmobile'>
           <ContactMobile />
           </div>
