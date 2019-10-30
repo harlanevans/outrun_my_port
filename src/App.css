@@ -346,6 +346,7 @@ ion-icon {
     margin-top: 15em;
     margin-left: -2em;
     z-index: 300;
+    transition: .5s ease-in-out;
   }
 
   .choice-box-one,
@@ -363,6 +364,7 @@ ion-icon {
     width: 100%;
     z-index: 300;
     text-shadow: 1px 1px #1f032e;
+    transition: .5s ease-in-out;
   }
 
   .choice-box-one:hover,
@@ -371,7 +373,7 @@ ion-icon {
   .choice-box-four:hover,
   .choice-box-skills:hover {
     width: 120%;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
     /* animation: color-fade-text 2s infinite linear; */
   }
 
@@ -390,6 +392,14 @@ ion-icon {
     -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation-delay: 0.25s;
+    transition: 1s ease-in-out;
+  }
+  
+  .slide-in-left-one::after {
+    animation: slide-out-right 1s cubic-bezier(0.94, 0.45, 0.46, 0.25) both;
+    animation-delay: 0.25s;
+    transition: 1s ease-in-out;
+
   }
 
   .slide-in-left-skills {
@@ -917,6 +927,19 @@ ion-icon {
     100% {
       -webkit-transform: translateX(0);
       transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-out-right {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 0;
+    }
+    
+    100% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
       opacity: 1;
     }
   }
