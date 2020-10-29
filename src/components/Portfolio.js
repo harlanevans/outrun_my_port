@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <div className="bg-portfolio">
       <Grid columns={3} style={{ zIndex: "-100" }}>
-        <Grid.Column style={{ zIndex: "-100" }}/>
+        <Grid.Column style={{ zIndex: "-100" }} />
 
         <Grid.Column
           stretched
@@ -18,36 +18,48 @@ const Portfolio = () => {
             delay={500}
             style={{ padding: "0em", margin: "0em" }}
           >
-          <div className="main-box">
-            <a
-              href="https://hayleyhansenhealing.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{padding: "1em 0em"}}
-            >
-              <Grid.Row className="port-box-one">
-                  <h4 className="port-link"><center>Hayley Hansen<br /> Healing</center></h4>
-              </Grid.Row>
-            </a>
-            <a
-                href="https://sxexp.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Grid.Row className="port-box-one">
-                  <h4 className="port-link"><center>Southern Cross <br />Humanitarian</center></h4>
-              </Grid.Row>
-            </a>
-            <a
-              href="https://terra-nova-cabins.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Grid.Row className="port-box-one">
-                  <h4 className="port-link"><center>Terra Nova Cabins</center></h4>
-              </Grid.Row>
-            </a>
-              </div>
+            <div className="main-box">
+              <a
+                href="https://hayleyhansenhealing.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ padding: "1em 0em" }}
+              >
+                <Grid.Row className="port-box-one">
+                  <h4 className="port-link">
+                    <center>
+                      Hayley Hansen
+                      <br /> Healing
+                    </center>
+                  </h4>
+                </Grid.Row>
+              </a>
+              <a
+                href="http://www.southerncrossexp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Grid.Row className="port-box-one">
+                  <h4 className="port-link">
+                    <center>
+                      Southern Cross <br />
+                      Humanitarian
+                    </center>
+                  </h4>
+                </Grid.Row>
+              </a>
+              <a
+                href="https://terra-nova-cabins.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Grid.Row className="port-box-one">
+                  <h4 className="port-link">
+                    <center>Terra Nova Cabins</center>
+                  </h4>
+                </Grid.Row>
+              </a>
+            </div>
           </Fade>
         </Grid.Column>
         <Grid.Column>
