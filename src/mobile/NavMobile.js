@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGripLinesVertical } from "@fortawesome/free-solid-svg-icons";
-import Resume from "../assets/HarlanEvans_Resume_PDF.pdf";
+// import Resume from "../assets/HarlanEvans_Resume_PDF.pdf";
 
 import { Grid } from "semantic-ui-react";
 import { Fade } from "react-reveal";
 import ChoicesMob from "./ChoicesMob";
-import HeaderMobile from './HeaderMobile';
+// import HeaderMobile from './HeaderMobile';
 
 const NavMobile = () => {
   const [toggle, setToggle] = useState(false);

@@ -23,7 +23,12 @@ const HeaderMobile = () => {
           </Grid.Row>
         </Fade>
         <Fade delay={2000} duration={2000}>
-          <a href={Resume} target="_blank" className="resume-link">
+          <a
+            href={Resume}
+            target="_blank"
+            className="resume-link"
+            rel="noopener noreferrer"
+          >
             <Grid.Row className="row-title">
               <h4 className="title-resume">Resume()</h4>
             </Grid.Row>
@@ -31,7 +36,7 @@ const HeaderMobile = () => {
         </Fade>
         <Fade bottom delay={2500} duration={2000}>
           <Grid.Row>
-          <div className="scroll">Scroll &darr;</div>
+            <div className="scroll">Scroll &darr;</div>
           </Grid.Row>
         </Fade>
       </div>

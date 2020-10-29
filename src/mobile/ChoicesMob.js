@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { Grid } from "semantic-ui-react";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 
 const ChoicesNav = () => {
   return (
