@@ -20,22 +20,22 @@ const Portfolio = () => {
           >
           <div className="main-box">
             <a
-              href="https://hayleyhansenhealing.com/"
+              href="https://sxexp.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
               style={{padding: "1em 0em"}}
             >
               <Grid.Row className="port-box-one">
-                  <h4 className="port-link"><center>Hayley Hansen<br /> Healing</center></h4>
+                  <h4 className="port-link"><center>Southern Cross <br /> Humanitarian</center></h4>
               </Grid.Row>
             </a>
             <a
-                href="https://sxexp.herokuapp.com/"
+              href="https://devpointstudiosslc.netlify.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Grid.Row className="port-box-one">
-                  <h4 className="port-link"><center>Southern Cross <br />Humanitarian</center></h4>
+                  <h4 className="port-link"><center>DevPointStudios <br />Coming-Soon</center></h4>
               </Grid.Row>
             </a>
             <a

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import { Fade } from 'react-reveal';
-import Resume from "../assets/HarlanEvans_Resume_PDF.pdf";
+import Resume from "../assets/HarlanEvansResume.pdf";
 
 
 const HeaderMobile = () => {
